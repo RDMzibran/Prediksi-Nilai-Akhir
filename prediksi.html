@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prediksi Nilai Akhir Mahasiswa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <a href="index.html">beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="prediksi.html">prediksi nilai</a>
+  <a href="index.html#kontak">Kontak</a> <!-- Ini yang penting -->
+</nav>
+         
+  </nav>
+
+  <section class="prediksi">
+  <div class="prediksi-container">
+    <h2>Prediksi Nilai Akhir Mahasiswa</h2>
+    <p>Masukkan data kehadiran mahasiswa untuk memprediksi nilai akhir secara otomatis menggunakan model regresi linier.</p>
+
+    <form class="form-prediksi" id="form-prediksi">
+      <label for="nama">Nama Mahasiswa:</label>
+      <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required />
+
+      <label for="tugas">Nilai Tugas:</label>
+      <input type="number" id="tugas" placeholder="Contoh: 85" required />
+
+      <label for="uts">Nilai UTS:</label>
+      <input type="number" id="uts" placeholder="Contoh: 90" required />
+
+      <label for="uas">Nilai UAS:</label>
+      <input type="number" id="uas" placeholder="Contoh: 88" required />
+
+      <label for="kehadiran">Persentase Kehadiran (%):</label>
+      <input type="number" id="kehadiran" placeholder="Contoh: 95" required />
+
+      <button type="submit">Prediksi Nilai</button>
+    </form>
+
+    <div id="hasil-prediksi" class="hasil-prediksi"></div>
+  </div>
+</section>
+
+
+    <div id="hasil-prediksi" class="hasil"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

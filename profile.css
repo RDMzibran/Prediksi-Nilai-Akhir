@@ -1,0 +1,58 @@
+/* Reset dan Font */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center; /* tambahin ini */
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600 ;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+.profil-section {
+  display: flex;
+  height: 94.5vh;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.profil-teks {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.profil-gambar {
+  flex: 1;
+  background-image: url('dronekampus.jpg');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  filter: brightness(0.85);
+  z-index: 0;
+}
+
+

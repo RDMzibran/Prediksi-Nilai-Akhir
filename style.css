@@ -1,0 +1,340 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+main {
+  background-size: cover;
+  background-position: center;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffd966;
+  background-color: transparent;
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 94.7vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* === TENTANG KAMI === */
+.tentang {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.tentang-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tentang h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.tentang p {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.tentang-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.tentang-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.tentang-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.tentang-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === PREDIKSI SECTION === */
+/* === PREDIKSI SECTION MINIMALIS === */
+/* === PREDIKSI SECTION === */
+.prediksi {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.prediksi-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-align: left;
+}
+
+.prediksi h2 {
+  font-size: 22px;
+  color: #4e54c8;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.prediksi p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-prediksi {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-prediksi label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-prediksi input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-prediksi button {
+  padding: 12px;
+  font-size: 14px;
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-prediksi button:hover {
+  background-color: #3a3dbb;
+}
+
+.hasil-prediksi {
+  margin-top: 20px;
+  font-size: 1em;
+  color: green;
+  text-align: center;
+}
+
+
+/* === PROFIL SECTION === */
+.profil-section {
+  background: linear-gradient(135deg, #0052d4, #4364f7);
+  color: white;
+  padding: 80px 0;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.profil-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.profil-teks {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.profil-teks h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profil-teks h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.profil-teks p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profil-gambar {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+}
+
+.profil-gambar img {
+  max-width: 100%;
+  border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* ===== FOOTER UNAMIN ===== */
+.footer-unamin {
+  background-color: #000000;
+  padding: 40px 20px 0;
+  font-family: Arial, sans-serif;
+  color: #fff3f3;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #4e54c8;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #4e54c8;
+}
+
+.footer-map iframe {
+  border-radius: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #000000;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* Tambahkan juga kode navbar yang sebelumnya */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* === Responsive Footer === */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 25px;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+  }
+}
+
